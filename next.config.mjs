@@ -9,6 +9,7 @@ const withPWA = withPWAInit({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  turbopack: {}, // <--- Agrega esta línea para evitar el conflicto con Turbopack
   images: {
     remotePatterns: [
       {
